@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "CSfGHhL+ksGVjiOMc/tW8fEMhRUIdUJzOo+kQHai7gemcwVDFtQyJW+gMW416A19MPLDNx9GzsWiQCetPil2wA==",
+  "success": true,
+  "projectFilePath": "C:\\Heri\\UdeC\\Formacion\\Ciclo 3\\Grupo 43\\HospiEnCasa.App\\HospiEnCasa.App.Servicios\\HospiEnCasa.App.Servicios.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Heri\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Heri\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Heri\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Heri\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Heri\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Heri\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
