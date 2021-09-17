@@ -28,6 +28,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Heri\\UdeC\\Formacion\\Ciclo 3\\Grupo 43\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj": {
+                "projectPath": "C:\\Heri\\UdeC\\Formacion\\Ciclo 3\\Grupo 43\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj"
+              },
               "C:\\Heri\\UdeC\\Formacion\\Ciclo 3\\Grupo 43\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj": {
                 "projectPath": "C:\\Heri\\UdeC\\Formacion\\Ciclo 3\\Grupo 43\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj"
               }
