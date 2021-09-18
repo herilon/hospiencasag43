@@ -11,7 +11,9 @@ namespace HospiEnCasa.App.Consola
         {
             Console.WriteLine("Hello World!");  
             //AddPaciente();
-            IndexPacientes();
+            //IndexPacientes();
+            //DeletePaciente();
+            //IndexPacientes();
 
         }
         private static void AddPaciente()
@@ -36,6 +38,10 @@ namespace HospiEnCasa.App.Consola
             {
                 Console.WriteLine(paciente.Nombre + " " + paciente.Apellidos);
             }
+        }
+        private static void DeletePaciente()
+        {
+            _repoPaciente.DeletePaciente(2);
         }
     }
 }

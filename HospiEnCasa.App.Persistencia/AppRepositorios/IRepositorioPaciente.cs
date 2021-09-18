@@ -6,5 +6,6 @@ namespace HospiEnCasa.App.Persistencia
     public interface IRepositorioPaciente{
         Paciente AddPaciente (Paciente paciente);
         IEnumerable<Paciente> GetAllPacientes();
+        void DeletePaciente(int idPaciente);
     }
 }
