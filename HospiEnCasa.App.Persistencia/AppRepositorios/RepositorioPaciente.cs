@@ -7,7 +7,7 @@ namespace HospiEnCasa.App.Persistencia
     {
         private readonly AppContext _appContext = new AppContext();
 
-        Paciente IRepositorioPaciente.AddPaciente (Paciente paciente)
+        Paciente IRepositorioPaciente.AddPaciente(Paciente paciente)
         {
             var pacienteAdicionado = _appContext.Pacientes.Add(paciente);
             _appContext.SaveChanges();
@@ -46,6 +46,22 @@ namespace HospiEnCasa.App.Persistencia
                 _appContext.SaveChanges();
             }
             return pacienteEncontrado;
+        }
+
+        Medico IRepositorioPaciente.AsignarMedico(int idPaciente, int idMedico)
+        {
+            var pacienteEncontrado = _appContext.Pacientes.Find(idPaciente);
+            if (pacienteEncontrado != null)
+            {
+                var medicoEncontrado = _appContext.Medicos.Find(idMedico);
+                if (medicoEncontrado != null)
+                {
+                    pacienteEncontrado.Medico = medicoEncontrado;
+                    _appContext.SaveChanges();
+                }
+                return medicoEncontrado;
+            }
+            return null;
         }
     }
 }

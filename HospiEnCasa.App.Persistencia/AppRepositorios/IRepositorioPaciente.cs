@@ -9,5 +9,7 @@ namespace HospiEnCasa.App.Persistencia
         void DeletePaciente(int idPaciente);
         public Paciente GetPaciente(int idPaciente);
         public Paciente UpdatePaciente(Paciente paciente);
+        Medico AsignarMedico(int idPaciente, int idMedico);
+
     }
 }

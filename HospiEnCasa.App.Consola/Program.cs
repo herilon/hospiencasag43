@@ -7,13 +7,16 @@ namespace HospiEnCasa.App.Consola
     class Program
     {
         private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente();
+        private static IRepositorioMedico _repoMedico = new RepositorioMedico();
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");  
+            Console.WriteLine("Hello World!");
             //AddPaciente();
             //IndexPacientes();
             //DeletePaciente();
             //IndexPacientes();
+            //AddMedico();
+            AsignarMedico();
 
         }
         private static void AddPaciente()
@@ -43,5 +46,27 @@ namespace HospiEnCasa.App.Consola
         {
             _repoPaciente.DeletePaciente(2);
         }
+
+        private static void AddMedico()
+        {
+            var medico = new Medico
+            {
+                Nombre = "Juanita",
+                Apellidos = "Gomez",
+                NumeroTelefono = "3001645",
+                Genero = Genero.Femenino,
+                Especialidad = "Internista",
+                Codigo = "123456",
+                RegistroRethus = "ABC123",
+            };
+            _repoMedico.AddMedico(medico);
+        }
+
+        private static void AsignarMedico()
+        {
+            var medico = _repoPaciente.AsignarMedico(1, 3);
+            Console.WriteLine(medico.Nombre + " " + medico.Apellidos);
+        }
+
     }
 }
