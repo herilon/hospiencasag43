@@ -2,3 +2,19 @@
 @model HospiEnCasa.App.Frontend.Pages.Pacientes.DetailsModel
 @{
 }
+<h1>Detalle del paciente</h1>
+<table class="table table-striped">
+    <tr>
+        <th scope="col">Nombre</th>
+        <td>@Model.paciente.Nombre</td>
+    </tr>
+    <tr></tr>
+        <th scope="col">Apellidos</th>
+        <td>@Model.paciente.Apellidos</td>
+    </tr>
+    <tr></tr>
+        <th scope="col">Telefono</th>
+        <td>@Model.paciente.NumeroTelefono</td>
+    </table>
+</table>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>
