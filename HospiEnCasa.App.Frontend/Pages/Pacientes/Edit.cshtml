@@ -1,10 +1,14 @@
 ﻿@page
 @using HospiEnCasa.App.Dominio;
-@model HospiEnCasa.App.Fontend.Pages.Pacientes.CreateModel
+@model HospiEnCasa.App.Frontend.Pages.Pacientes.EditModel
 @{
 }
 <h1>Nuevo paciente</h1>
 <form method="post">
+    <div class="form-group">
+        <label asp-for="paciente.Id"></label>
+        <input asp-for="paciente.Id" class="form-control" readonly>
+    </div>
     <div class="form-group">
         <label asp-for="paciente.Nombre"></label>
         <input asp-for="paciente.Nombre" class="form-control" placeholder="Pepito perez">
@@ -42,6 +46,6 @@
         <label asp-for="paciente.FechaNacimiento"></label>
         <input asp-for="paciente.FechaNacimiento" class="form-control">
     </div>
-    <button type="submit" class="btn btn-primary btn-block">Crear paciente</button>
+    <button type="submit" class="btn btn-primary btn-block">Actualizar paciente</button>
 </form>
 <a class="btn btn-secondary" asp-page="./Index">Volver</a>

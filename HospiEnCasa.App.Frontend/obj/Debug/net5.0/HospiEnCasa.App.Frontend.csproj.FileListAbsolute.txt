@@ -73,3 +73,4 @@ C:\Heri\UdeC\Formacion\Ciclo 3\Grupo 43\HospiEnCasa.App\HospiEnCasa.App.Frontend
 C:\Heri\UdeC\Formacion\Ciclo 3\Grupo 43\HospiEnCasa.App\HospiEnCasa.App.Frontend\bin\Debug\net5.0\HospiEnCasa.App.Persistencia.pdb
 C:\Heri\UdeC\Formacion\Ciclo 3\Grupo 43\HospiEnCasa.App\HospiEnCasa.App.Frontend\bin\Debug\net5.0\HospiEnCasa.App.Dominio.pdb
 C:\Heri\UdeC\Formacion\Ciclo 3\Grupo 43\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Create.cshtml.g.cs
+C:\Heri\UdeC\Formacion\Ciclo 3\Grupo 43\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Edit.cshtml.g.cs

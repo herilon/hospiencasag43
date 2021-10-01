@@ -15649,6 +15649,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Heri\\UdeC\\Formacion\\Ciclo 3\\Grupo 43\\HospiEnCasa.App\\HospiEnCasa.App.Frontend\\Pages\\Pacientes\\Edit.cshtml",
+      "TargetPath": "Pages\\Pacientes\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Heri\\UdeC\\Formacion\\Ciclo 3\\Grupo 43\\HospiEnCasa.App\\HospiEnCasa.App.Frontend\\Pages\\Pacientes\\Index.cshtml",
       "TargetPath": "Pages\\Pacientes\\Index.cshtml",
       "FileKind": "mvc"

@@ -26,8 +26,15 @@ namespace HospiEnCasa.App.Fontend.Pages.Pacientes
 
         public IActionResult OnPost(Paciente paciente)
         {
-            _repoPaciente.AddPaciente(paciente);
-            return RedirectToPage("Index");
+            if (ModelState.IsValid)
+            {
+                _repoPaciente.AddPaciente(paciente);
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }
