@@ -12,9 +12,25 @@
         <th scope="col">Apellidos</th>
         <td>@Model.paciente.Apellidos</td>
     </tr>
-    <tr></tr>
+    <tr>
+    </tr>
         <th scope="col">Telefono</th>
         <td>@Model.paciente.NumeroTelefono</td>
-    </table>
+    </tr>
+    </tr>
+        <th scope="col">Medico</th>
+        @if (Model.paciente.Medico == null)
+        {
+            <th>
+                <a class="btn btn-secondary" asp-page="./AddMedico" asp-route-id="@Model.paciente.Id">
+                    Asignar medico
+                </a>
+            </th>
+        }
+        else
+        {
+            <td>@Model.paciente.Medico.Nombre</td>
+        }s
+    </tr>
 </table>
 <a class="btn btn-secondary" asp-page="./Index">Volver</a>
