@@ -13,5 +13,10 @@ namespace HospiEnCasa.App.Persistencia
             _appContext.SaveChanges();
             return medicoAdicionado.Entity;
         }
+        IEnumerable<Medico> IRepositorioMedico.GetAllMedicos()
+        {
+            return _appContext.Medicos;
+        }
+
     }
 }
