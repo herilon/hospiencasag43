@@ -1,0 +1,22 @@
+﻿@page
+@model HospiEnCasa.App.Fontend.Pages.Pacientes.AddMedicoModel
+@{
+}
+<h1>Asignar medico</h1>
+<form method="post">
+    <div class="form-group">
+        <label for="pacienteId">Paciente</label>
+        <input type="text" id="pacienteId" name="pacienteId" class="form-control" value="@Model.paciente.Id" readonly>
+    </div>
+    <div class="form-group">
+        <label for="idMedico">Medico</label>
+        <select id="idMedico" name="idMedico" class="form-control">
+            @foreach (var medico in Model.medicos)
+            {
+                <option value="@medico.Id">@medico.Nombre</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Asignar medico</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

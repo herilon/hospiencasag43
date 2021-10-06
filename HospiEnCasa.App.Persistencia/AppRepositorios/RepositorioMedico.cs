@@ -18,5 +18,10 @@ namespace HospiEnCasa.App.Persistencia
             return _appContext.Medicos;
         }
 
+        Medico IRepositorioMedico.GetMedico(int idMedico)
+        {
+            return _appContext.Medicos.Find(idMedico);
+        }
+
     }
 }

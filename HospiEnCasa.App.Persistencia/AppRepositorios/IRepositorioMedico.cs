@@ -6,5 +6,6 @@ namespace HospiEnCasa.App.Persistencia
     public interface IRepositorioMedico{
         Medico AddMedico (Medico medico);
         IEnumerable<Medico> GetAllMedicos();
+        public Medico GetMedico(int idMedico);
     }
 }
