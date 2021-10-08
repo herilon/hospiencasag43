@@ -77,3 +77,4 @@ C:\Heri\UdeC\Formacion\Ciclo 3\Grupo 43\HospiEnCasa.App\HospiEnCasa.App.Frontend
 C:\Heri\UdeC\Formacion\Ciclo 3\Grupo 43\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Medicos\Create.cshtml.g.cs
 C:\Heri\UdeC\Formacion\Ciclo 3\Grupo 43\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Medicos\Index.cshtml.g.cs
 C:\Heri\UdeC\Formacion\Ciclo 3\Grupo 43\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\AddMedico.cshtml.g.cs
+C:\Heri\UdeC\Formacion\Ciclo 3\Grupo 43\HospiEnCasa.App\HospiEnCasa.App.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\AddSignoVital.cshtml.g.cs

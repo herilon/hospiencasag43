@@ -1,0 +1,25 @@
+﻿@page
+@using HospiEnCasa.App.Dominio
+@model HospiEnCasa.App.Frontend.Pages.Pacientes.AddSignoVitalModel
+@{
+}
+<h1>Asignar signo vital</h1>
+<form method="post">
+    <div class="form-group">
+        <label for="idPaciente">Paciente</label>
+        <input type="text" id="idPaciente" class="form-control" name="idPaciente" value="@Model.paciente.Id" readonly>
+    </div>
+    <div class="form-group">
+        <label asp-for="signoVital.FechaHora"></label>
+        <input asp-for="signoVital.FechaHora" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="signoVital.Valor"></label>
+        <input asp-for="signoVital.Valor" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="signoVital.Signo"></label>
+        <select asp-for="signoVital.Signo" asp-items="Html.GetEnumSelectList<TipoSigno>()"class="form-control"></select>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Asignar signo vital</button>
+</form>
