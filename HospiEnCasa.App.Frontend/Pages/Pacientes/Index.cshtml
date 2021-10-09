@@ -10,6 +10,13 @@
     </select>
     <button type="submit" class="btn btn-primary my-1">Filtrar</button>
 </form>
+<form method="get" class="form-inline">
+    <label for="b" class="my-1 mr-2">Buscar</label>
+    <input type="text" name="b" id="b" asp-for="@Model.bActual" class="my-1 mr-sm-2">
+    <button type="submit" class="btn btn-primary my-1">Buscar</button>
+</form>
+
+
 
 <a class="btn btn-primary" asp-page="./Create">Crear paciente</a>
 <h1>Listado de pacientes</h1>

@@ -93,5 +93,12 @@ namespace HospiEnCasa.App.Persistencia
                         .Where(p => p.Genero == (Genero)genero)
                         .ToList();
         }
+
+        public IEnumerable<Paciente> SearchPacientes(string nombre)
+        {
+            return _appContext.Pacientes
+                        .Where(p => p.Nombre.Contains(nombre));
+
+        }
     }
 }
