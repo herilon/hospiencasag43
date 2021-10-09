@@ -32,6 +32,7 @@ namespace HospiEnCasa.App.Persistencia
             var paciente =  _appContext.Pacientes
                 .Where(p => p.Id == idPaciente)
                 .Include(p => p.Medico)
+                .Include(p => p.SignosVitales)
                 .FirstOrDefault();
             return paciente;
         }
@@ -69,6 +70,28 @@ namespace HospiEnCasa.App.Persistencia
                 return medicoEncontrado;
             }
             return null;
+        }
+
+        public SignoVital AsignarSignoVital(int idPaciente, SignoVital signoVital)
+        {
+            var pacienteEncontrado =  _appContext.Pacientes
+                .Where(p => p.Id == idPaciente)
+                .Include(p => p.SignosVitales)
+                .FirstOrDefault();
+            if (pacienteEncontrado != null)
+            {
+                pacienteEncontrado.SignosVitales.Add(signoVital);
+                _appContext.SaveChanges();
+                return signoVital;
+            }
+            return null;
+        }
+
+        public IEnumerable<Paciente> GetPacientesGenero(int genero)
+        {
+            return _appContext.Pacientes
+                        .Where(p => p.Genero == (Genero)genero)
+                        .ToList();
         }
     }
 }

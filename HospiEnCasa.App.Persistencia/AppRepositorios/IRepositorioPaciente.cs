@@ -10,6 +10,7 @@ namespace HospiEnCasa.App.Persistencia
         public Paciente GetPaciente(int idPaciente);
         public Paciente UpdatePaciente(Paciente paciente);
         Medico AsignarMedico(int idPaciente, int idMedico);
-
+        public SignoVital AsignarSignoVital(int idPaciente, SignoVital signoVital);
+        public IEnumerable<Paciente> GetPacientesGenero(int genero);
     }
 }
